@@ -1,0 +1,3 @@
+export const data = {
+    churchStory: 'Holy Protection of the Mother of God Orthodox Christian Church is part of an extended Orthodox Christian community in Houston, Texas. This extended community encompasses thousands of faithful of various ethnic backgrounds. Orthodox Christianity is rooted in the faith of the Apostles of Christ. It was ten years ago when a group of enthusiastic people from Houston decided to start a new Orthodox Christian Mission in the southwest part of the city. The goal was to serve the Orthodox Christian faithful in that area and develop an Orthodox Christian outreach.'
+};
