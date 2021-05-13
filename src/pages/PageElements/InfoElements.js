@@ -130,6 +130,7 @@ export const Img = styled.img`
     padding-right: 0;
     align-items: center;
     justify-content: center;
+    border-radius: 7px;
 
     @media screen and (max-width: 768px) {
         margin-left: 10px;

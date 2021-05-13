@@ -24,6 +24,7 @@ import Icon from '../images/test.jpg';
 import {churchStory, 
         churchStoryRedirect
     } from './Data/churchStory';
+import { HPIntro, HPStoryRedirect } from './Data/HPStory';
 
 
 function ReadMoreTrunc({children, redirect}) {
@@ -80,6 +81,7 @@ const Home = () => {
                         <Column1>
                             <TopLine>The Holy Protection of the</TopLine>
                             <Heading>Mother of God</Heading>
+                            <ReadMoreTrunc redirect={HPStoryRedirect}>{HPIntro}</ReadMoreTrunc>
                         </Column1>
                         <Column2>
                             <ImgWrap>
