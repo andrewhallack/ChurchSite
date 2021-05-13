@@ -33,6 +33,7 @@ export const InfoRow = styled.div`
     width: 100%;
     height: 100%;
     padding-bottom: 100px;
+    
 
     @media screen and (max-width: 1080px) {
         // grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col2' 'col1'`)};
