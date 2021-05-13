@@ -5,6 +5,7 @@ export const InfoContainer = styled.div`
     background: rgb(226, 226, 226);
     padding-top: 150px;
     min-height: 100vh;
+    overflow-x:hidden;
 
     @media screen and (max-width: 1080px) {
         padding 100px 0;
@@ -13,22 +14,21 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
     display: grid;
-    z-index: 1;
-    width: 100%;
-    margin-right: auto:
-    margin-left: auto;
-    padding: 0 24px;
+    grid-template-columns: repeat(auto-fit, minmax(60rem,50%));
     justify-content: center;
+    padding: 10px;
+    grid-gap: 3rem;
 
-    @media screen and (max-width: 768px) {
-        // width: 90%;
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: repeat(auto-fit, minmax(40rem,100%));
     }
 `;
 
 export const InfoRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    grid-auto-columns: minmax(auto, 50%);
     align-items: center;
+    justify-content: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col2'` : `'col2 col1'`)};
     width: 100%;
     height: 100%;
@@ -75,7 +75,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    min-width: 100%;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 60px;
 `;
@@ -116,12 +116,16 @@ export const SubTitle = styled.p`
 
 export const ImgWrap = styled.div`
     max-width: 540px;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 768px) {
         margin-left: 10px;
