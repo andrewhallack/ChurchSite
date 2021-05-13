@@ -8,6 +8,8 @@ import SundaySchool from './pages/sundayschool';
 import ContactUs from './pages/contactus';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Footer from './pages/PageElements/Footer/footer';
+import LongText from './pages/LongText/LongText';
 
 function App() {
 
@@ -27,7 +29,10 @@ function App() {
         <Route path='/about' component={About} />
         <Route path='/sunday-school' component={SundaySchool} />
         <Route path='/contact-us' component={ContactUs} />
+        <Route path="/stories/:longText" component={LongText}/>
+          
       </Switch>
+      <Footer />
     </Router>
   );
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink as Link } from 'react-router-dom';
 
 export const InfoContainer = styled.div`
     color: rgb(13, 13, 13);
@@ -8,7 +9,7 @@ export const InfoContainer = styled.div`
     overflow-x:hidden;
 
     @media screen and (max-width: 1080px) {
-        padding 100px 0;
+        padding-top: 100px;
     }
 `;
 
@@ -38,6 +39,7 @@ export const InfoRow = styled.div`
     @media screen and (max-width: 1080px) {
         // grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col2' 'col1'`)};
         grid-template-areas: 'col1' 'col2';
+        padding-bottom: 50px;
     }
 `;
 
@@ -113,6 +115,7 @@ export const SubTitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: #000;
+    white-space: pre-line;
 `;
 
 export const ImgWrap = styled.div`
@@ -143,11 +146,13 @@ export const Partition = styled.div`
     margin-bottom: 100px;
 `;
 
-export const RMBtn = styled.button`
-    background: transparent;
+export const RMBtn = styled(Link)`
     color: #4684FF;
     padding: 4px 4px 4px 4px;
     outline: none;
     border: 4px;
     border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
 `;
