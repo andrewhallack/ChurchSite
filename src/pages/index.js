@@ -21,7 +21,9 @@ import {Column1,
     } from './PageElements/InfoElements';
 import Church from '../images/church.jpg';
 import Icon from '../images/test.jpg';
-import {churchStory} from './Data/data';
+import {churchStory, 
+        churchStoryRedirect
+    } from './Data/churchStory';
 
 
 function ReadMoreTrunc({children, redirect}) {
@@ -66,7 +68,7 @@ const Home = () => {
                         <Column1>
                             <TopLine>The Story of</TopLine>
                             <Heading>Our Church</Heading>
-                            <ReadMoreTrunc redirect={'/stories/our-story'}>{churchStory}</ReadMoreTrunc>
+                            <ReadMoreTrunc redirect={churchStoryRedirect}>{churchStory}</ReadMoreTrunc>
                         </Column1>
                         <Column2>
                             <ImgWrap>

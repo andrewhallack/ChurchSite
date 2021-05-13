@@ -5,4 +5,4 @@ Our first meetings and our first services were held in the homes of the faithful
 By the grace of God and with the generosity of many people, on March 9th, 2011, we succeeded in taking a very important step. We purchased about two beautiful acres of land in the southwest area of Houston. In the meantime, we continued to work towards maintaining and increasing our membership. The construction committee decided on a two-phase project. The first phase will consist of a multipurpose building that will serve both as a liturgical, prayerful space, as well as a social hall. This will be followed by a second phase which will consist of the sanctuary. Our purchasing the property and moving towards having a permanent place to worship fulfill our primary goal which has never changed: to come together in community to worship Christ and share His love with our neighbors.
 `
 
-export const churchStoryRedirect = ''
+export const churchStoryRedirect = '/stories/our-story'
