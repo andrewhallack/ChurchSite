@@ -118,4 +118,3 @@ export const HeroH2 = styled.h2`
         font-size: 16px;
     }
 `;
-

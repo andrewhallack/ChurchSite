@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Footer from './pages/PageElements/Footer/footer';
 import LongText from './pages/LongText/LongText';
+import ScrollToTop from './pages/PageElements/ScrollToTop';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop></ScrollToTop>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <Switch>
