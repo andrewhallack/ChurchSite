@@ -64,32 +64,7 @@ const Home = () => {
                 </HeroContent>
             </HeroContainer1>
             <InfoContainer>
-                <InfoWrapper>
-                    <InfoRow imgStart={'false'}>
-                        <Column1>
-                            <TopLine>The Story of</TopLine>
-                            <Heading>Our Church</Heading>
-                            <ReadMoreTrunc redirect={churchStoryRedirect}>{churchStory}</ReadMoreTrunc>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Church} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                    <InfoRow>
-                        <Column1>
-                            <TopLine>The Holy Protection of the</TopLine>
-                            <Heading>Mother of God</Heading>
-                            <ReadMoreTrunc redirect={HPStoryRedirect}>{HPIntro}</ReadMoreTrunc>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Icon} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                </InfoWrapper>
+                
             </InfoContainer>
         </>
     );

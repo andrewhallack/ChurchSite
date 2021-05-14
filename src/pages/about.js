@@ -20,7 +20,8 @@ import {Column1,
         TopLine
     } from './PageElements/InfoElements';
 import Church from '../images/church.jpg';
-import Icon from '../images/test.jpg';
+import Icon from '../images/icon.jpg';
+import Priest from '../images/priest.jpg';
 import {churchStory, 
         churchStoryRedirect
     } from './Data/churchStory';
@@ -74,6 +75,18 @@ const About = () => {
                         <Column2>
                             <ImgWrap>
                                 <Img src={Icon} alt='' />
+                            </ImgWrap>
+                        </Column2>
+                    </InfoRow>
+                    <InfoRow imgStart={'false'}>
+                        <Column1>
+                            <TopLine>Our Priest</TopLine>
+                            <Heading>Fr. Julian Anitei</Heading>
+                            <ReadMoreTrunc redirect={HPStoryRedirect}>{HPIntro}</ReadMoreTrunc>
+                        </Column1>
+                        <Column2>
+                            <ImgWrap>
+                                <Img src={Priest} alt='' />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

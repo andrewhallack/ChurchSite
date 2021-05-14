@@ -1,7 +1,9 @@
 import React from 'react';
 import {GoogleMap, withScriptjs, withGoogleMap, Marker} from "react-google-maps";
+import { churchStory } from './Data/churchStory';
 import { HeroContainer2, HeroContent } from './PageElements/HeroElements';
-import { Column1, Column2, Heading, InfoContainer, InfoLi, InfoRow, InfoUl, InfoWrapper, ListContent, ListRow, MapContainer, MapContent, SubTitle, TextWrapper, ListItemTitle, TopLine, MapHeader, Partition, PartitionContainer } from './PageElements/InfoElements';
+import { Column1, Column2, Heading, InfoContainer, InfoLi, InfoRow, InfoUl, InfoWrapper, ListContent, ListRow, MapContainer, MapContent, SubTitle, TextWrapper, ListItemTitle, TopLine, MapHeader, Partition, PartitionContainer, ImgWrap, Img, InfoA } from './PageElements/InfoElements';
+import Church from '../images/church.jpg'; 
 
 function Map() {
     return (
@@ -25,78 +27,94 @@ const ContactUs = () => {
                         <ListContent>
                             <InfoUl>
                                 <Heading>The Holy Protection of the Mother of God</Heading>
-                                <InfoLi>13850 Beechnut Street Houston, TX 77083</InfoLi>
-                                <InfoLi>281-741-0591</InfoLi>
-                                <InfoLi>holyprotection@gmail.com</InfoLi>
+                                <InfoLi>
+                                    <ListItemTitle>Address</ListItemTitle>
+                                    <InfoA target="_blank" href="https://www.google.com/maps/place/13850+Beechnut+St,+Houston,+TX+77083/@29.6888351,-95.6296454,17z/data=!3m1!4b1!4m5!3m4!1s0x8640ddeba0b7d9fb:0xc4ffa6bcb0ff6d1c!8m2!3d29.6888305!4d-95.6274567">
+                                        13850 Beechnut Street 
+                                        <br></br>
+                                        Houston, TX 77083
+                                    </InfoA>
+                                </InfoLi>
+                                <InfoLi>
+                                    <ListItemTitle>Phone</ListItemTitle>
+                                    281-741-0591
+                                </InfoLi>
+                                <InfoLi>
+                                    <ListItemTitle>Email</ListItemTitle>
+                                    holyprotection@gmail.com
+                                </InfoLi>
                             </InfoUl>
+                            <ImgWrap style={{paddingTop: '24px'}}>
+                                <Img src={Church} />
+                            </ImgWrap>
                         </ListContent>
                         <ListContent>
                             <InfoUl>
                                 <Heading>Parish Council</Heading>
                                 <InfoLi>
-                                    Fr. Julian Anitei
                                     <ListItemTitle>Parish Priest</ListItemTitle>
+                                    Fr. Julian Anitei<br></br>
                                     Email: 
                                 </InfoLi>
 
                                 <InfoLi>
-                                    George Abuata
                                     <ListItemTitle>Parish Council President</ListItemTitle>
+                                    George Abuata<br></br>                                   
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Dan Stan
                                     <ListItemTitle>Parish Council Vice President</ListItemTitle>
+                                    Dan Stan<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Gabriel Haddad
                                     <ListItemTitle>Secretary</ListItemTitle>
+                                    Gabriel Haddad<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    John Dakhour
                                     <ListItemTitle>Treasurer</ListItemTitle>
+                                    John Dakhour<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Mourice Shagoury
                                     <ListItemTitle>Auditor</ListItemTitle>
+                                    Mourice Shagoury<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Marius Goja
                                     <ListItemTitle>Auditor</ListItemTitle>
+                                    Marius Goja<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Timothy Krill
                                     <ListItemTitle>Chanter</ListItemTitle>
+                                    Timothy Krill<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 
                                 <InfoLi>
-                                    Daniela Abayan
                                     <ListItemTitle>Ladies' Auxiliary</ListItemTitle>
+                                    Daniela Abayan<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Elena Stan
                                     <ListItemTitle>Religious Education</ListItemTitle>
+                                    Elena Stan<br></br>
                                     Email: 
                                 </InfoLi>
                                 
                                 <InfoLi>
-                                    Anca Theodora Williams
                                     <ListItemTitle>Youth Director</ListItemTitle>
+                                    Anca Theodora Williams<br></br>
                                     Email: 
                                 </InfoLi>
                             </InfoUl>

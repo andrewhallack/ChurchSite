@@ -187,7 +187,7 @@ export const InfoUl = styled.ul`
 
 export const InfoLi = styled.li`
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 `;
 
 export const ListRow = styled.div`
@@ -221,4 +221,15 @@ export const ListItemTitle = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+`;
+
+export const InfoA = styled.a`
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    margin-bottom: 0.2rem;
+
+    &:hover {
+        text-decoration: underline;
+        transition: 0.3s ease-out;
+    }
 `;
