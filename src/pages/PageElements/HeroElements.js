@@ -6,7 +6,7 @@ export const HeroContainer1 = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: -100; 
@@ -33,8 +33,7 @@ export const HeroContainer2 = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
-    height: 100vh;
+    min-height: 50vh;
     width: 100%;
     position: relative;
 `;

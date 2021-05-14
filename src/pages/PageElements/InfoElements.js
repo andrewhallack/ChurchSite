@@ -139,12 +139,20 @@ export const Img = styled.img`
     }
 `;
 
+export const PartitionContainer = styled.div`
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    background: rgb(226, 226, 226);
+    padding: 0 0 50px;
+`;
+
 export const Partition = styled.div`
     background: rgb(13, 13, 13);
-    height: 20px;
-    width: 100%;
-    right: 0;
-    margin-bottom: 100px;
+    height: 2px;
+    width: 90%;
 `;
 
 export const RMBtn = styled(Link)`
@@ -156,4 +164,61 @@ export const RMBtn = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     font-size: 14px;
+`;
+
+export const MapContainer = styled.div`
+    background: rgb(226, 226, 226);
+    max-width: 100%;
+    padding: 0 0 100px;
+`;
+
+export const MapContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+`;
+
+export const InfoUl = styled.ul`
+    list-style-type: none;
+    text-align: left;
+`;
+
+export const InfoLi = styled.li`
+    text-decoration: none;
+    margin-bottom: 10px;
+`;
+
+export const ListRow = styled.div`
+    min-height: 50vh;
+    background: rgb(226, 226, 226);
+    padding: 50px 0 150px;
+    justify-content: center;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+            flex-direction: column;
+    }
+`;
+
+export const ListContent = styled.div`
+    min-width: 20vh;
+    min-height: 20vh;
+    max-width: 800px;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(226, 226, 226);
+    padding: 24px;
+    overflow: hidden;
+`;
+
+export const ListItemTitle = styled.p`
+    color: #4684FF;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 `;
