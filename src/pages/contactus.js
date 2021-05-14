@@ -21,7 +21,8 @@ const ContactUs = () => {
             <HeroContent>
                 <div style={{width: '70vh', height: '70vh', maxWidth: '800px', maxHeight: '800px'}}>
                     <WrappedMap 
-                        googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAVO3UshJbPS0hyu9nSefyex79cMkR1h1M'}
+                        googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}
+                        // googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAVO3UshJbPS0hyu9nSefyex79cMkR1h1M'}
                         loadingElement={<div style={{height: "100%"}}/>}
                         containerElement={<div style={{height: "100%"}}/>}
                         mapElement={<div style={{height: "100%"}}/>}

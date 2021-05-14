@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LongTextContainer = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     padding: 0 30px;
@@ -13,10 +13,9 @@ export const LongTextContainer = styled.div`
 
 export const ArticleContainer = styled.div`
     max-width: 1100px;
-    max-height: 90vh;
-    padding: 2em 0;
+    min-height: 80vh;
     position: relative;
-
+    padding: 150px 0;
 
     @media screen and (max-width: 1080px) {
         display: flex;
@@ -28,7 +27,7 @@ export const ArticleContainer = styled.div`
 export const ImageContainer = styled.div`
     float: left;
     max-width: 540px;
-    padding: 24px;
+    padding-right: 24px;
 
     @media screen and (max-width: 1080px) {
         padding-bottom: 24px;
@@ -40,7 +39,7 @@ export const Image = styled.img`
     border-radius: 7px;
 `;
 
-export const Text = styled.article`
+export const Text = styled.p`
     margin: 0;
     white-space: pre-line;
 `;
