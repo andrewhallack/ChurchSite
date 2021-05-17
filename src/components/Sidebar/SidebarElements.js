@@ -85,6 +85,7 @@ export const SidebarLink = styled(Link)`
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+    padding: 50px 0;
 `;
 
 export const SideBtnLink = styled(Link)`

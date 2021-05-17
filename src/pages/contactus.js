@@ -37,7 +37,7 @@ const ContactUs = () => {
                                 </InfoLi>
                                 <InfoLi>
                                     <ListItemTitle>Phone</ListItemTitle>
-                                    281-741-0591
+                                    (281) 741-0591
                                 </InfoLi>
                                 <InfoLi>
                                     <ListItemTitle>Email</ListItemTitle>
@@ -121,16 +121,15 @@ const ContactUs = () => {
                         </ListContent>
                     {/* </InfoRow> */}
                 </ListRow>
-                <PartitionContainer>
+                {/* <PartitionContainer>
                     <Partition></Partition>
-                </PartitionContainer>              
+                </PartitionContainer>               */}
             </InfoContainer>
             <MapContainer>
                 <MapContent>
                     <Heading>Map</Heading>
-                    <div style={{minWidth: '70%', 
+                    <div style={{minWidth: '50%', 
                                  height: '70vh', 
-                                 maxWidth: '80%', 
                                 }}>
                         <WrappedMap 
                             googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places'}

@@ -15,6 +15,9 @@ import {Column1,
         InfoContainer, 
         InfoRow,  
         InfoWrapper, 
+        PageHeader, 
+        PageHeaderContainer, 
+        PageHeaderContianer, 
         RMBtn, 
         SubTitle,
         TopLine
@@ -26,6 +29,7 @@ import {churchStory,
         churchStoryRedirect
     } from './Data/churchStory';
 import { HPIntro, HPStoryRedirect } from './Data/HPStory';
+import {PriestAbout} from './Data/PriestAbout'
 
 
 function ReadMoreTrunc({children, redirect}) {
@@ -52,7 +56,7 @@ const About = () => {
 
     return (
         <>
-            <InfoContainer>
+            <InfoContainer>                             
                 <InfoWrapper>
                     <InfoRow imgStart={'false'}>
                         <Column1>
@@ -82,7 +86,7 @@ const About = () => {
                         <Column1>
                             <TopLine>Our Priest</TopLine>
                             <Heading>Fr. Julian Anitei</Heading>
-                            <ReadMoreTrunc redirect={HPStoryRedirect}>{HPIntro}</ReadMoreTrunc>
+                            <ReadMoreTrunc redirect={HPStoryRedirect}>{PriestAbout}</ReadMoreTrunc>
                         </Column1>
                         <Column2>
                             <ImgWrap>

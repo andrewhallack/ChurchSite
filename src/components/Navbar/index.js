@@ -12,9 +12,10 @@ const Navbar = ({toggle}) => {
                 <Burger onClick={toggle}/>
                 <NavMenu>
                     <NavLink to='/' exact activeStyle>Home</NavLink>
-                    <NavLink to='/news' activeStyle>News</NavLink>
-                    <NavLink to='/sunday-school' activeStyle>Sunday School</NavLink>
                     <NavLink to='/about' activeStyle>About Us</NavLink>
+                    <NavLink to='/calendar' activeStyle>Calendar</NavLink>
+                    <NavLink to='/news' activeStyle>News</NavLink>
+                    <NavLink to='/announcements' activeStyle>Announcements</NavLink>
                     <NavLink to='/contact-us' activeStyle>Contact Us</NavLink>
                 </NavMenu>
                 <NavBtn>

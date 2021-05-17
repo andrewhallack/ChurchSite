@@ -11,9 +11,10 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="/" exact activeStyle>Home</SidebarLink>
-                    <SidebarLink to="/news" activeStyle>News</SidebarLink>
-                    <SidebarLink to="/sunday-school" activeStyle>Sunday School</SidebarLink>
                     <SidebarLink to="/about" activeStyle>About Us</SidebarLink>
+                    <SidebarLink to="/calendar" activeStyle>Calendar</SidebarLink>
+                    <SidebarLink to="/news" activeStyle>News</SidebarLink>
+                    <SidebarLink to="/announcemnets" activeStyle>Announcements</SidebarLink>
                     <SidebarLink to="/contact-us" activeStyle>Contact Us</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>

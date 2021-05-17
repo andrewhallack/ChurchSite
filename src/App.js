@@ -4,13 +4,13 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './pages/index'
 import About from './pages/about';
 import News from './pages/news';
-import SundaySchool from './pages/sundayschool';
 import ContactUs from './pages/contactus';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Footer from './pages/PageElements/Footer/footer';
 import LongText from './pages/LongText/LongText';
 import ScrollToTop from './pages/PageElements/ScrollToTop';
+import Calendar from './pages/Calendar';
 
 function App() {
 
@@ -29,10 +29,9 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/news' component={News} />
         <Route path='/about' component={About} />
-        <Route path='/sunday-school' component={SundaySchool} />
         <Route path='/contact-us' component={ContactUs} />
+        <Route path='/calendar' component={Calendar} />
         <Route path="/stories/:longText" component={LongText}/>
-          
       </Switch>
       <Footer />
     </Router>

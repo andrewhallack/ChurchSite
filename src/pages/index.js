@@ -17,6 +17,7 @@ import {Column1,
         InfoWrapper, 
         RMBtn, 
         SubTitle,
+        TextWrapper,
         TopLine
     } from './PageElements/InfoElements';
 import Church from '../images/church.jpg';
@@ -64,7 +65,36 @@ const Home = () => {
                 </HeroContent>
             </HeroContainer1>
             <InfoContainer>
-                
+                <InfoWrapper>
+                    <InfoRow imgStart={'false'}>
+                        <Column1>
+                            <TextWrapper>
+                                <TopLine>Call to Action</TopLine>
+                                <Heading>Join Our Church</Heading>
+                                <SubTitle></SubTitle>
+                            </TextWrapper>
+                        </Column1>
+                        <Column2>
+                            <ImgWrap>
+                                <Img src={Church} alt='' />
+                            </ImgWrap>
+                        </Column2>
+                    </InfoRow>
+                    <InfoRow>
+                        <Column1>
+                            <TextWrapper>
+                                <TopLine>Call to Action</TopLine>
+                                <Heading>Join Our Church</Heading>
+                                <SubTitle></SubTitle>
+                            </TextWrapper>
+                        </Column1>
+                        <Column2>
+                            <ImgWrap>
+                                <Img src={Church} alt='' />
+                            </ImgWrap>
+                        </Column2>
+                    </InfoRow>
+                </InfoWrapper>
             </InfoContainer>
         </>
     );

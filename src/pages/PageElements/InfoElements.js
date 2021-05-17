@@ -6,7 +6,7 @@ export const InfoContainer = styled.div`
     background: rgb(226, 226, 226);
     padding-top: 150px;
     min-height: 100vh;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
     @media screen and (max-width: 1080px) {
         padding-top: 100px;
@@ -150,9 +150,10 @@ export const PartitionContainer = styled.div`
 `;
 
 export const Partition = styled.div`
-    background: rgb(13, 13, 13);
-    height: 2px;
+    background: rgb(100, 100, 100);
+    height: 1px;
     width: 90%;
+    max-width: 1200px;
 `;
 
 export const RMBtn = styled(Link)`
@@ -231,5 +232,48 @@ export const InfoA = styled.a`
     &:hover {
         text-decoration: underline;
         transition: 0.3s ease-out;
+    }
+`;
+
+export const IFrameContainer = styled.div`
+    width: 100%;
+    // background: black;
+    justify-contents: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const IFrame = styled.iframe`
+    display: flex;
+    width: 50%;
+    height: 70vh;
+    min-height: 600px;
+    border: none;
+    color: rgb(226, 226, 226);
+
+    @media screen and (max-width: 1080px) {
+        display: none;
+    }
+
+    @media screen and (max-height: 1000px) {
+        padding: 0 0 50px;
+    }
+`;
+
+export const IFrame2 = styled.iframe`
+    display: none;
+    width: 90%;
+    height: 70vh;
+    min-height: 600px;
+    border: none;
+    color: rgb(226, 226, 226);
+
+    @media screen and (max-width: 1080px) {
+        display: flex;
+    }
+    
+    @media screen and (max-height: 1000px) {
+        padding: 0 0 50px;
     }
 `;
