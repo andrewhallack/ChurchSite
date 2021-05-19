@@ -1,7 +1,5 @@
 import React from 'react'
-import { IFrame, IFrame2, IFrameContainer, InfoContainer, InfoWrapper } from './PageElements/InfoElements'
-import Icon from '../images/icon.jpg';
-// import Iframe from 'react-iframe' 
+import { IFrame, IFrame2, IFrameContainer, InfoContainer } from './PageElements/InfoElements'
 
 const Calendar = () => {
     return (

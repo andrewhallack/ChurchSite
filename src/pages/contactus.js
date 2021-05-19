@@ -1,8 +1,6 @@
 import React from 'react';
 import {GoogleMap, withScriptjs, withGoogleMap, Marker} from "react-google-maps";
-import { churchStory } from './Data/churchStory';
-import { HeroContainer2, HeroContent } from './PageElements/HeroElements';
-import { Column1, Column2, Heading, InfoContainer, InfoLi, InfoRow, InfoUl, InfoWrapper, ListContent, ListRow, MapContainer, MapContent, SubTitle, TextWrapper, ListItemTitle, TopLine, MapHeader, Partition, PartitionContainer, ImgWrap, Img, InfoA } from './PageElements/InfoElements';
+import { Heading, InfoContainer, InfoLi,InfoUl, ListContent, ListRow, MapContainer, MapContent, ListItemTitle, ImgWrap, Img, InfoA } from './PageElements/InfoElements';
 import Church from '../images/church.jpg'; 
 
 function Map() {

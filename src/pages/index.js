@@ -21,11 +21,11 @@ import {Column1,
         TopLine
     } from './PageElements/InfoElements';
 import Church from '../images/church.jpg';
-import Icon from '../images/test.jpg';
-import {churchStory, 
-        churchStoryRedirect
-    } from './Data/churchStory';
-import { HPIntro, HPStoryRedirect } from './Data/HPStory';
+// import Icon from '../images/test.jpg';
+// import {churchStory, 
+//         churchStoryRedirect
+//     } from './Data/churchStory';
+// import { HPIntro, HPStoryRedirect } from './Data/HPStory';
 
 
 function ReadMoreTrunc({children, redirect}) {

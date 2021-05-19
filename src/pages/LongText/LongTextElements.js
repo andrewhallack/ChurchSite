@@ -44,3 +44,12 @@ export const Text = styled.p`
     white-space: pre-line;
 `;
 
+export const SectionTitle = styled.p`
+    color: #4684FF;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin: 20px 0 16px;
+`;

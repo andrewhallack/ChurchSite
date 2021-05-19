@@ -1,12 +1,4 @@
 import React from 'react';
-import {HeroBg, 
-        HeroContainer1,
-        HeroContent, 
-        HeroH1, 
-        HeroH2, 
-        HeroTitle, 
-        ImgBg1
-    } from './PageElements/HeroElements';
 import {Column1, 
         Column2, 
         Heading,
@@ -15,9 +7,6 @@ import {Column1,
         InfoContainer, 
         InfoRow,  
         InfoWrapper, 
-        PageHeader, 
-        PageHeaderContainer, 
-        PageHeaderContianer, 
         RMBtn, 
         SubTitle,
         TopLine
@@ -62,7 +51,7 @@ const About = () => {
                         <Column1>
                             <TopLine>The Story of</TopLine>
                             <Heading>Our Church</Heading>
-                            <ReadMoreTrunc redirect={churchStoryRedirect}>{churchStory}</ReadMoreTrunc>
+                            <ReadMoreTrunc redirect="/stories/0">{churchStory}</ReadMoreTrunc>
                         </Column1>
                         <Column2>
                             <ImgWrap>
@@ -74,7 +63,7 @@ const About = () => {
                         <Column1>
                             <TopLine>The Holy Protection of the</TopLine>
                             <Heading>Mother of God</Heading>
-                            <ReadMoreTrunc redirect={HPStoryRedirect}>{HPIntro}</ReadMoreTrunc>
+                            <ReadMoreTrunc redirect="/stories/1">{HPIntro}</ReadMoreTrunc>
                         </Column1>
                         <Column2>
                             <ImgWrap>
@@ -86,7 +75,7 @@ const About = () => {
                         <Column1>
                             <TopLine>Our Priest</TopLine>
                             <Heading>Fr. Julian Anitei</Heading>
-                            <ReadMoreTrunc redirect={HPStoryRedirect}>{PriestAbout}</ReadMoreTrunc>
+                            <ReadMoreTrunc redirect={"/stories/2"}>{PriestAbout}</ReadMoreTrunc>
                         </Column1>
                         <Column2>
                             <ImgWrap>
