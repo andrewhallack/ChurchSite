@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './pages/index'
 import About from './pages/about';
 import News from './pages/news';
@@ -34,7 +34,7 @@ function App() {
         <Route path='/contact-us' component={ContactUs} />
         <Route path='/announcements' component={Announcements} />
         <Route path='/calendar' component={Calendar} />
-        <Route exact path="/stories/:id" render={props => <LongText {...props} />} />
+        <Route exact path="/stories/:id/:name" render={props => <LongText {...props} />} />
         <Route exact path="/404" component={PageNotfound} />
       </Switch>
       <Footer />

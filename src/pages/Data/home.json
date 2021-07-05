@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "topline": "Welcome To",
+        "header": "Our Church",
+        "subtitles": [
+            ""
+        ],
+        "sections": [
+            "The Holy Protection of the Mother of God Orthodox Church is a parish where the True Faith, Orthodox Christianity, is practiced just as it has been for over 2,000 years."
+        ],
+        "redirect": "",
+        "buttonDisplay": true,
+        "button1": "The Orthodox Faith",
+        "button2": "Church Etiquette Considerations"
+    },
+    {
+        "id": 1,
+        "topline": "Welcome To",
+        "header": "Our Church",
+        "subtitles": [
+            ""
+        ],
+        "sections": [
+            "The Holy Protection of the Mother of God Orthodox Church is a parish where the True Faith, Orthodox Christianity, is practiced just as it has been for over 2,000 years."
+        ],
+        "redirect": "",
+        "buttonDisplay": false,
+        "button1": "The Orthodox Faith",
+        "button2": "Church Etiquette Considerations"
+    }
+]

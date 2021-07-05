@@ -277,3 +277,54 @@ export const IFrame2 = styled.iframe`
         padding: 0 0 50px;
     }
 `;
+
+export const InfoButtonWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 49%));
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 100%));
+    }
+`;
+
+export const InfoButton1 = styled(Link)`
+    display: flex;
+    background: #4684FF;
+    color: rgb(226, 226, 226);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const InfoButton2 = styled(Link)`
+    display: flex;
+    background: rgb(226, 226, 226);
+    color: #4684FF;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 50px;
+    border-color: #4684FF;
+    border-style: solid;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+`;

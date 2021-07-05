@@ -1,0 +1,68 @@
+[
+    {
+        "id": 0, 
+        "role": "parish priest",
+        "name": "Fr. Julian Anitei",
+        "email": ""
+    },
+    {
+        "id": 1,
+        "role": "parish council president",
+        "name": "George Abuata",
+        "email": ""
+    },
+    {
+        "id": 2,
+        "role": "parish council vice president",
+        "name": "Dan Stan",
+        "email": "" 
+    },
+    {
+        "id": 3,
+        "role": "secretary",
+        "name": "Gabriel Haddad",
+        "email": ""
+    },
+    {
+        "id": 4,
+        "role": "Treasurer",
+        "name": "John Dakhour",
+        "email": ""
+    },
+    {
+        "id": 5,
+        "role": "Auditor",
+        "name": "Mourice Shagoury",
+        "email": ""
+    },
+    {
+        "id": 6,
+        "role": "Auditor",
+        "name": "Marius Goja",
+        "email": ""
+    },
+    {
+        "id": 7,
+        "role": "Chanter",
+        "name": "Timothy Krill",
+        "email": ""
+    },
+    {
+        "id": 8,
+        "role": "ladies' auxiliary",
+        "name": "Daniela Abayan",
+        "email": ""
+    },
+    {
+        "id": 9,
+        "role": "religious education",
+        "name": "Elena Stan",
+        "email": ""
+    },
+    {
+        "id": 10,
+        "role": "youth director",
+        "name": "Anca Theadora Williams",
+        "email": ""
+    }
+]

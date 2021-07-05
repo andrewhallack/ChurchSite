@@ -1,11 +1,8 @@
 import React from 'react';
 import {Redirect} from 'react-router-dom'
 import Stories from '../Data/Articles/articles.json'
-import { Heading, InfoContainer, TopLine } from '../PageElements/InfoElements';
+import { Heading, TopLine } from '../PageElements/InfoElements';
 import {ArticleContainer, Image, ImageContainer, LongTextContainer, SectionTitle, Text} from './LongTextElements'
-import { churchStory } from '../Data/churchStory';
-import Church from '../../images/church.jpg';
-import Icon from '../../images/icon.jpg';
 import {images} from '../Data/Articles/images'
 
 export default ({match: { params: {id} } }) => {

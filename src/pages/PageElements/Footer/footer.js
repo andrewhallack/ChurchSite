@@ -19,15 +19,9 @@ const Footer = () => {
                             <FooterLinkTitle>Site Links</FooterLinkTitle>
                             <FooterLink to="/">Home</FooterLink>
                             <FooterLink to="/about">About Us</FooterLink>
-                            <FooterLink to="/">Calendar</FooterLink>
-                            <FooterLink to="/">Contact</FooterLink>
-                            <FooterLink to="/">Sunday School</FooterLink>
+                            <FooterLink to="/calendar">Calendar</FooterLink>
+                            <FooterLink to="/contact-us">Contact Us</FooterLink>
                         </FooterLinkItems>                        
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Sign Up to Receive Emails</FooterLinkTitle>
-                        </FooterLinkItems>  
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>

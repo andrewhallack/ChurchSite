@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink as Link } from 'react-router-dom';
+
 import {HeroBg, 
         HeroContainer1,
         HeroContent, 
@@ -11,7 +13,10 @@ import {Column1,
         Column2, 
         Heading,
         Img, 
-        ImgWrap, 
+        ImgWrap,
+        InfoButton1,
+        InfoButton2,
+        InfoButtonWrapper,
         InfoContainer, 
         InfoRow,  
         InfoWrapper, 
@@ -20,41 +25,40 @@ import {Column1,
         TextWrapper,
         TopLine
     } from './PageElements/InfoElements';
-import Church from '../images/church.jpg';
-// import Icon from '../images/test.jpg';
-// import {churchStory, 
-//         churchStoryRedirect
-//     } from './Data/churchStory';
-// import { HPIntro, HPStoryRedirect } from './Data/HPStory';
+import {images} from './Data/Articles/images'
+import homeStories from './Data/home.json'
 
 
-function ReadMoreTrunc({children, redirect}) {
-    const text = children;
-    var resultString = text;
+// function ReadMoreTrunc({children, redirect}) {
+//     const text = children;
+//     var resultString = text;
 
 
-    var newLnIdx = text.indexOf('\n');
-    if (newLnIdx > -1) {
-        resultString = text.slice(0, newLnIdx);
-    }
+//     var newLnIdx = text.indexOf('\n');
+//     if (newLnIdx > -1) {
+//         resultString = text.slice(0, newLnIdx);
+//     }
 
-    return (
-        <SubTitle>
-            {resultString}
-            <RMBtn to={redirect}>
-                Read More
-            </RMBtn>
-        </SubTitle>
-    );
-}
+//     return (
+//         <SubTitle>
+//             {resultString}
+//             <RMBtn to={redirect}>
+//                 Read More
+//             </RMBtn>
+//         </SubTitle>
+//     );
+// }
 
 const Home = () => {
+
+    var imgStart = false;
+    var btnDisplay = false;
 
     return (
         <>
             <HeroContainer1>
                 <HeroBg>
-                    <ImgBg1 src={Church} alt='' />
+                    <ImgBg1 src={images[0]} alt='' />
                 </HeroBg>
                 <HeroContent>
                     <HeroTitle>
@@ -65,36 +69,59 @@ const Home = () => {
                 </HeroContent>
             </HeroContainer1>
             <InfoContainer>
-                <InfoWrapper>
-                    <InfoRow imgStart={'false'}>
-                        <Column1>
-                            <TextWrapper>
-                                <TopLine>Call to Action</TopLine>
-                                <Heading>Join Our Church</Heading>
-                                <SubTitle></SubTitle>
-                            </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Church} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                    <InfoRow>
-                        <Column1>
-                            <TextWrapper>
-                                <TopLine>Call to Action</TopLine>
-                                <Heading>Join Our Church</Heading>
-                                <SubTitle></SubTitle>
-                            </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Church} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                </InfoWrapper>
+                {homeStories.map((details, index) => {
+
+                    imgStart = !imgStart;
+                    btnDisplay = details.buttonDisplay;
+                    console.log("THIS IS BUTTON DISPLAY ", btnDisplay)
+
+                    const paragraph = details.sections;
+                    var paraString = paragraph.toString();
+
+                    if (btnDisplay === false) {
+                        return (
+                            <InfoWrapper>
+                            <InfoRow imgStart={imgStart}>
+                                <Column1>
+                                    <TopLine>{details.topline}</TopLine>
+                                    <Heading>{details.header}</Heading>
+                                    <SubTitle>{paraString}</SubTitle>
+                                </Column1>
+                                <Column2>
+                                    <ImgWrap>
+                                        <Img src={images[index]} alt='' />
+                                    </ImgWrap>
+                                </Column2>
+                            </InfoRow>
+                        </InfoWrapper>
+                        );
+                    }
+
+                    return (
+                        <InfoWrapper>
+                            <InfoRow imgStart={imgStart}>
+                                <Column1>
+                                    <TopLine>{details.topline}</TopLine>
+                                    <Heading>{details.header}</Heading>
+                                    <SubTitle>{paraString}</SubTitle>
+                                    <InfoButtonWrapper>
+                                        <InfoButton1 to='/about'>
+                                            {details.button1}
+                                        </InfoButton1>
+                                        <InfoButton2 to='/about'>
+                                            {details.button2}
+                                        </InfoButton2>
+                                    </InfoButtonWrapper>
+                                </Column1>
+                                <Column2>
+                                    <ImgWrap>
+                                        <Img src={images[index]} alt='' />
+                                    </ImgWrap>
+                                </Column2>
+                            </InfoRow>
+                        </InfoWrapper>
+                    )
+                })}
             </InfoContainer>
         </>
     );

@@ -11,14 +11,8 @@ import {Column1,
         SubTitle,
         TopLine
     } from './PageElements/InfoElements';
-import Church from '../images/church.jpg';
-import Icon from '../images/icon.jpg';
-import Priest from '../images/priest.jpg';
-import {churchStory, 
-        churchStoryRedirect
-    } from './Data/churchStory';
-import { HPIntro, HPStoryRedirect } from './Data/HPStory';
-import {PriestAbout} from './Data/PriestAbout'
+import Stories from './Data/Articles/articles.json'
+import {images} from './Data/Articles/images'
 
 
 function ReadMoreTrunc({children, redirect}) {
@@ -30,6 +24,7 @@ function ReadMoreTrunc({children, redirect}) {
     if (newLnIdx > -1) {
         resultString = text.slice(0, newLnIdx);
     }
+
 
     return (
         <SubTitle>
@@ -43,47 +38,35 @@ function ReadMoreTrunc({children, redirect}) {
 
 const About = () => {
 
+    var imgStart = false;
+
     return (
         <>
-            <InfoContainer>                             
-                <InfoWrapper>
-                    <InfoRow imgStart={'false'}>
-                        <Column1>
-                            <TopLine>The Story of</TopLine>
-                            <Heading>Our Church</Heading>
-                            <ReadMoreTrunc redirect="/stories/0">{churchStory}</ReadMoreTrunc>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Church} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                    <InfoRow>
-                        <Column1>
-                            <TopLine>The Holy Protection of the</TopLine>
-                            <Heading>Mother of God</Heading>
-                            <ReadMoreTrunc redirect="/stories/1">{HPIntro}</ReadMoreTrunc>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Icon} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                    <InfoRow imgStart={'false'}>
-                        <Column1>
-                            <TopLine>Our Priest</TopLine>
-                            <Heading>Fr. Julian Anitei</Heading>
-                            <ReadMoreTrunc redirect={"/stories/2"}>{PriestAbout}</ReadMoreTrunc>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={Priest} alt='' />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                </InfoWrapper>
+            <InfoContainer>  
+                {Stories.map((details, index) => {
+
+                    imgStart = !imgStart;
+
+                    const paragraph = details.sections;
+                    var paraString = paragraph.toString();
+
+                    return (
+                        <InfoWrapper>
+                            <InfoRow imgStart={imgStart}>
+                                <Column1>
+                                    <TopLine>{details.topline}</TopLine>
+                                    <Heading>{details.header}</Heading>
+                                    <ReadMoreTrunc redirect={details.redirect}>{paraString}</ReadMoreTrunc>
+                                </Column1>
+                                <Column2>
+                                    <ImgWrap>
+                                        <Img src={images[index]} alt='' />
+                                    </ImgWrap>
+                                </Column2>
+                            </InfoRow>
+                        </InfoWrapper>
+                    )
+                })}                           
             </InfoContainer>
         </>
     );
